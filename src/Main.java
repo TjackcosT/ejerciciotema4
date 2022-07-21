@@ -1,30 +1,48 @@
 public class Main {
     public static void main(String[] args) {
+
+        //---------------//
+        //If
         int numeroIf = 10;
-        int numeroWhile = 0;
-        int numeroFor;
-        String estacion = "veraño";
 
         if (numeroIf > 0) {
-            System.out.println("Positivo");
+            System.out.println("La variable "+ numeroIf +" es Positivo");
         } else if (numeroIf < 0) {
-            System.out.println("Negativo");
-        } else
-        System.out.println("0");
+            System.out.println("La variable "+ numeroIf +" es Negativo");
+        } else{
+            System.out.println("La variable "+ numeroIf +" es 0");
+        }
+
+        //---------------//
+        //While
+        int numeroWhile = 1;
 
         while (numeroWhile < 3){
+            numeroWhile++;
             System.out.println("El numero While es:" + numeroWhile);
-            numeroWhile = numeroWhile + 1;
         }
+
+        //---------------//
+        //Do While
+        int numeroDoWhile = 3;
+
         do {
-            System.out.println("El numero Do While es: "+ numeroWhile);
-            numeroWhile = numeroWhile + 1;
+            numeroDoWhile = numeroDoWhile + 1;
+            System.out.println("El numero Do While es: "+ numeroDoWhile);
         }
-        while (numeroWhile < 1);
+        while (numeroDoWhile < 3);
+
+        //---------------//
+        //For
+        int numeroFor;
 
         for (numeroFor = 0; numeroFor <= 3; numeroFor++){
             System.out.println("El numero For es:" + numeroFor);
         }
+
+        //---------------//
+        //Switch
+        String estacion = "veraño";
 
         switch (estacion){
 
